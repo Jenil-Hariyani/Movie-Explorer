@@ -12,6 +12,7 @@ function Home() {
   const fetchMovies = async (query, pageNumber = 1) => {
     setLoading(true);
 
+    // fetch data
     const res = await fetch(
       `https://www.omdbapi.com/?apikey=ec986fa0&s=${query}&page=${pageNumber}`,
     );
